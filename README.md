@@ -79,6 +79,16 @@ def add_numbers(a: int, b: int) -> int:
 
 Then it binds the tool to the model and creates an agent for simple arithmetic and reasoning tasks.
 
+## Travel agent example
+
+A practical example of this pattern is a travel agent assistant. Instead of only handling math, the agent can be given tools like `search_flights`, `find_hotels`, `get_weather`, or `create_itinerary`. For example, a user can ask:
+
+```text
+Plan a 3-day trip to Bali with a budget of $1000, including hotel suggestions and travel tips.
+```
+
+The agent can decide which tools to call, gather the right information, and return a helpful travel recommendation. This shows how LangChain agents can be adapted from simple examples to real-world workflows such as booking support, itinerary planning, and personalized travel assistance.
+
 ## Learning goals
 
 This notebook is useful for learning:
@@ -92,7 +102,7 @@ This notebook is useful for learning:
 
 ## Notes
 
-This project is a beginner-friendly notebook focused on experimentation and learning rather than a production-ready application. It is ideal for trying out LangChain agent patterns in a quick, interactive environment.
+This project is a beginner-friendly notebook focused on experimentation and learning rather than a production-ready application. It is ideal for trying out LangChain agent patterns in a quick, interactive way.
 
 ## Run it
 
